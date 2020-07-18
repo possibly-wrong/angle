@@ -46,8 +46,8 @@ namespace math
         return y;
     }
 
-    const Rational PI =
-        "3.14159265358979323846264338327950288419716939937510582097494";
+    const Rational PI = Rational(
+        "3.14159265358979323846264338327950288419716939937510582097494");
 
     // Return atan(sqrt(x2)) with ~200-bit accuracy.
     Rational atan_sqrt(Rational x2)
@@ -102,7 +102,7 @@ namespace math
             angle = PI - angle;
         }
         return angle;
-    };
+    }
 
     // Return angle between vectors using same "cross/dot product" formula.
     double angle(const Vector& u, const Vector& v)
